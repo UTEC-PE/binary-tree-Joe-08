@@ -9,10 +9,13 @@ int main(int argc, char const *argv[]){
 	a.insertar(3);
 	a.insertar(-1);
 	a.insertar(0);
+	a.insertar(20);
+	a.insertar(10);
+	a.insertar(15);
 	a.remover(2);
 	a.printenOrden();
-	//a.peso();
-	//a.printpreOrden();
-	//a.printpostOrden();
+	a.peso();
+	a.printpreOrden();
+	a.printpostOrden();
 	return 0;
 }

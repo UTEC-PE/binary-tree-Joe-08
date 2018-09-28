@@ -28,9 +28,9 @@ struct Nodo{
 	void printpreOrden(Nodo *&nodo){
 		cout<<nodo->dato<<" ";
 		if(nodo->izq)
-			printpreOrden(nodo->izq);
+			printenOrden(nodo->izq);
 		if(nodo->der)
-			printpreOrden(nodo->der);
+			printenOrden(nodo->der);
 	}
 	void printpostOrden(Nodo *&nodo){
 		if(nodo->izq)

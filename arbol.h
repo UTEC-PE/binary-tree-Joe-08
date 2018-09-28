@@ -12,9 +12,8 @@ public:
 	void insertar(int data){ 
 		if (root)
 			root->insertar(root,data);
-		else{
+		else
 			root = new Nodo{data,NULL,NULL};
-		}
 	}
 	void printenOrden(){
 		if (root){
@@ -39,10 +38,8 @@ public:
 			cout<<root->peso(root)<<endl;
 	}
 	void remover(int data){
-		if (root){
+		if (root)
 			root->remover(root,data);
-			cout<<endl;
-		}
 	}
 };
 //iterador(en orden)
