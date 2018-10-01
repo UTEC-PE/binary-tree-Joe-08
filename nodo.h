@@ -55,6 +55,12 @@ struct Nodo{
 			nodo = nodo->izq;
 		}
 	}
+	Nodo *maxNodo(Nodo *nodo){
+		if (!nodo) return NULL;
+		while (nodo->der != NULL){
+			nodo = nodo->der;
+		}
+	}
 	Nodo *remover(Nodo *root, int data){
 		if (!root) return NULL;
 		else if (data < root->dato) root->izq = remover(root->izq,data);

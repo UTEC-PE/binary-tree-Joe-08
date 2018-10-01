@@ -1,12 +1,13 @@
 #include <iostream>
 #include "nodo.h"
-
+#include "iterador.h"
 using namespace std;
 
 class Arbol{
 private:
 	Nodo *root;
 public:
+	stack<Nodo*> s;
 	Arbol(){root = NULL;}
 	~Arbol(){};
 	void insertar(int data){ 
@@ -41,6 +42,15 @@ public:
 		if (root)
 			root->remover(root,data);
 	}
+	iterador begin(){
+		return iterador(root->minNodo(root));
+	}
+	iterador end(){
+		return iterador(root->maxNodo(root));
+	}
+    stack<Nodo*> getStack(){
+    	return s;
+    }
 };
 //iterador(en orden)
 	
