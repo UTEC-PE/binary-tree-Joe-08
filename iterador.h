@@ -3,7 +3,7 @@
 #include "nodo.h"
 using namespace std;
 
-class iterador{
+class iterador{ // Falta
 private:
 	Nodo *corriente;
 public:
@@ -12,7 +12,7 @@ public:
 		corriente = NULL;
     }
     iterador(Nodo* nodo){
-      	this->corriente = nodo;
+      	this->corriente = nodo; 
     }
     iterador operator++(){
       	miStack.pop();

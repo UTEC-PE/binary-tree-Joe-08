@@ -34,9 +34,10 @@ public:
 			cout<<endl;
 		}
 	}
-	int peso(){
-		if (root)
-			cout<<root->peso(root)<<endl;
+	int peso(){ // Esto debería retornar el peso, no imprimirlo
+		/*if (root)
+			cout<<root->peso(root)<<endl;*/
+		return root->peso(root); // De esta manera
 	}
 	void remover(int data){
 		if (root)
